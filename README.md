@@ -5,6 +5,9 @@ now I rewrite it by using NextJS, a modern React framework. Have a look at the U
 
 
 
-# How to run locally
+# How to run local environment step by step?
+
+    npm i
+    npm run dev
 
 # 
