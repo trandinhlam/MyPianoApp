@@ -10,7 +10,6 @@ Have a look at the very simple UI:
 ![]("./UI.png")
 
 
-
 # Features
 + Piano simulation, can be play by clicking your mouse into keys or using keyboard.
 
@@ -20,7 +19,7 @@ Have a look at the very simple UI:
 + ESLint
 + XMLHttpRequest
 + AudioContext object
-+ Some basic design patterns
++ Some basic design patterns: Singleton, DI
 + 
 
 
@@ -34,7 +33,7 @@ Have a look at the very simple UI:
     npm i
     npm run dev
 
-Then open the browser add [http://localhost:3000/piano](http://localhost:3000/piano)
+Then open the browser at [http://localhost:3000/piano](http://localhost:3000/piano)
 
 # How to deploy using CI/CD process?
 
