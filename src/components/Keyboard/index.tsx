@@ -43,7 +43,7 @@ export default function Keyboard(props: {}) {
     const [soundPlayer, setSoundPlayer] = useState<any>();
 
     useEffect(() => {
-        setSoundPlayer(SoundUtils());//Dependency injection, can be replace easyly with other Sound player instance
+        setSoundPlayer(SoundUtils());//Dependency injection, can be replace easily with other sound player instance
     }, [])
 
     const keyPress = (keyId: number) => {
