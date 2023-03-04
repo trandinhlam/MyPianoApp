@@ -11,7 +11,7 @@ export default function Piano() {
             <>Welcome to my simple funny piano simulation</>
             <br />
             <br />
-            <strong>Let's enjoy playing music on web browser!</strong>
+            <strong>Enjoy playing music on web browser!</strong>
             <br />
             <br />
             <Keyboard />

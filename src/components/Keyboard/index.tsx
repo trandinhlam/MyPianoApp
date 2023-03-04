@@ -57,7 +57,7 @@ export default function Keyboard(props: {}) {
             <div className={styles["p-wrapper"]}>
                 <ul className={styles["piano"]}>
                     {defaultPianoKeys.map(key =>
-                        <li className={styles["key"]}>
+                        <li className={styles["key"]} key={key?.blackKeyId || '' + key.whiteKeyId + ''}>
                             <div className={styles["white-key"]}
                                 onClick={() => keyPress(key.whiteKeyId)}
                             >
