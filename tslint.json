@@ -1,0 +1,17 @@
+{
+    "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+    "rules": {
+        "ordered-imports": false,
+        "no-angle-bracket-type-assertion": true,
+        "object-literal-sort-keys": false,
+        "jsx-no-lambda": false,
+        "no-empty-interface": false,
+        "no-conditional-assignment": true,
+        "no-consecutive-blank-lines": false,
+        "interface-name": false,
+        "import/no-webpack-loader-syntax": "off"
+    },
+    "linterOptions": {
+        "exclude": ["config/**/*.js", "node_modules/**/*.ts"]
+    }
+}
