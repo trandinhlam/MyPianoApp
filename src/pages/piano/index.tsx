@@ -19,7 +19,7 @@ export default function Piano() {
                 <br />
                 {/* Since the first time I have coded this app by Angular on July 2017, now I'm rewriting it by using NextJS - a modern React framework. */}
                 {/* <br /> */}
-                The idea is inspired while I'm playing some interesting simple music games of <Link href="https://www.amanotes.com/products" target={'_blank'}><strong>Amanotes</strong></Link> such as Magic Tiles 3, Tiles Hop, Dancing Road,...
+                The idea is inspired while I am playing some interesting simple music games of <Link href="https://www.amanotes.com/products" target={'_blank'}><strong>Amanotes</strong></Link> such as Magic Tiles 3, Tiles Hop, Dancing Road,...
                 <br />
                 In the future I will develop some cool features in order to learn new powerful technologies and satisfy my passion for music.
                 <br />
