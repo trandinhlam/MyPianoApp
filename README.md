@@ -2,13 +2,12 @@
 
 # Author: trandinhlam.github.io
 
-This is my simple funny piano web app simulation. Since the first time I code this app by Angular on July 2017, 
-now I'm rewriting by using NextJS - a modern React framework and developing some cool features.
+This is my simple funny piano web app simulation. Since the first time I have coded this app by Angular on July 2017, 
+now I'm rewriting it by using NextJS - a modern React framework and developing some cool features.
 
 Have a look at the very simple UI:
 
 ![](./UI.png)
-
 
 # Features
 + Piano simulation, can be play by clicking your mouse into keys or using keyboard.
@@ -54,7 +53,8 @@ Then open the browser at [http://localhost:3000/piano](http://localhost:3000/pia
   + Recommend next notes when user stop too long, using some simple AI models
 
 ## Technicals:
-  + Apply HTTP cache in order to reduce buffers download latency.
+  + Upload and fetch audio file using S3
+  + Apply HTTP cache and CDN in order to reduce buffers download latency
   + Refactor code for convenion implementation
   + Apply TailwindCSS for fast CSS custom
   + Using mp3/m4a file instead of .wav file to reduce storage size.
