@@ -7,7 +7,7 @@ now I'm rewriting it by using NextJS - a modern React framework.
 
 In the future I will develop some cool features in order to learn new powerful technologies and satisfy my passion for music.
 
-The idea is inspired while I'm playing some interesting simple music games of [Amannotes](https://www.amanotes.com/products) such as Magic Tiles 3, Tiles Hop, Dancing Road,...
+The idea is inspired while I'm playing some interesting simple music games of [Amanotes](https://www.amanotes.com/products) such as Magic Tiles 3, Tiles Hop, Dancing Road,...
 
 This is the hosted website: http://trandinhlamworld.click/piano.
 
