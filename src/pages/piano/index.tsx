@@ -5,10 +5,10 @@ import ReactGA from 'react-ga';
 import { useEffect } from 'react';
 
 export default function Piano() {
-    //setup GA
-    ReactGA.initialize('G-YFG8XWQD5W');
-    
+
     useEffect(() => {
+        //setup GA
+        ReactGA.initialize('G-YFG8XWQD5W');
         ReactGA.pageview(window.location.pathname + window.location.search);
     })
 
