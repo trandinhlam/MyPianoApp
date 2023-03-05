@@ -59,11 +59,10 @@ export default function Keyboard(props: {}) {
     useEffect(() => {
         setTimeout(() => {
             document.addEventListener("keydown", (event) => {
-                event.preventDefault();
                 if (event.isComposing || event.keyCode === 229) {
                     return;
                 }
-                console.log(event);
+                event.preventDefault();
                 const keyId = selectedKeyPadPool.filter(k => k.KeyPad == event.key).shift()?.KeyId ?? null;
                 keyId && keyPress(keyId);
             });
