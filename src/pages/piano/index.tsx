@@ -1,8 +1,16 @@
 import Keyboard from '@/components/Keyboard';
 import Link from 'next/link';
 import styles from './piano.module.scss';
+import ReactGA from 'react-ga';
+import { useEffect } from 'react';
 
 export default function Piano() {
+    //setup GA
+    ReactGA.initialize('G-YFG8XWQD5W');
+    
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    })
 
     return (
         <div className={styles["piano"]}>
