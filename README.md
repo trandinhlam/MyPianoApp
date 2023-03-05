@@ -1,25 +1,33 @@
 # Overview
 
-# Author: trandinhlam.github.io
+## Author: trandinhlam
 
 This is my simple funny piano web app simulation. Since the first time I have coded this app by Angular on July 2017, 
-now I'm rewriting it by using NextJS - a modern React framework and developing some cool features.
+now I'm rewriting it by using NextJS - a modern React framework.
 
-Have a look at the very simple UI:
+In the future I will develop some cool features in order to learn new powerful technologies and satisfy my passion for music.
 
-![](./UI.png)
+The idea is inspired while I'm playing some interesting simple music games of [Amannotes](https://www.amanotes.com/products) such as Magic Tiles 3, Tiles Hop, Dancing Road,...
+
+This is the hosted website: http://trandinhlamworld.click/piano.
+
+Let feel free to contribute with me or send me your feedbacks, your awesome ideas or just give it one star :).
+
+Thank you and let's enjoy music!!!
+
 
 # Features
 + Piano simulation, can be play by clicking your mouse into keys or using keyboard.
+Have a look at the very simple UI:
+![](./UI.png)
 
 # Technologies & Techiques Used
-+ ReactJS (NextJS via integrated Webpack, SASS, moduleCSS, ...)
 + Typescript
++ ReactJS (NextJS via integrated Webpack, SASS, moduleCSS, ...)
 + ESLint
-+ XMLHttpRequest
-+ AudioContext object
++ XMLHttpRequest, AudioContext objects
 + Some basic design patterns: Singleton, DI
-+ 
++ ...
 
 
 # Prerequisites:
@@ -27,16 +35,25 @@ Have a look at the very simple UI:
 + Nodejs version >=14
 
 
-# How to run local environment step by step?
+# How to run local environment?
 
     npm i
     npm run dev
 
 Then open the browser at [http://localhost:3000/piano](http://localhost:3000/piano)
 
-# How to deploy using CI/CD process?
+# DevOps configurations:
+
+## Server architechture:
+
+
+
+
+## How to deploy using CI/CD process?
 
    + 
+
+
 
 
 # Future improvements:
