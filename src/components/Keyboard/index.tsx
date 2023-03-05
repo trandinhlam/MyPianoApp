@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { KeyPadPool3 } from '../const';
 import { SoundUtils } from '../utils/SoundUtils';
 import styles from './Keyboard.module.scss';
-
+import classnames from 'classnames';
 //init pianokeys
 const defaultPianoKeys = [
     { whiteKeyId: 16 },
@@ -39,25 +39,48 @@ const defaultPianoKeys = [
 export default function Keyboard(props: {}) {
 
     const [keyId, setKeyId] = useState<number>(16);
-
     const [soundPlayer, setSoundPlayer] = useState<any>();
 
     useEffect(() => {
-        setSoundPlayer(SoundUtils());//Dependency injection, can be replace easyly with other Sound player instance
+        setSoundPlayer(SoundUtils());//Dependency injection, can be replace easily with other sound player instance
     }, [])
+
 
     const keyPress = (keyId: number) => {
         setKeyId(keyId)
-        soundPlayer.playNode(keyId)
+        if (soundPlayer) {
+            soundPlayer?.playNode(keyId)
+        }
     }
 
-    const getKeyPad = (keyId: number) => KeyPadPool3.filter(k => k.KeyId == keyId).shift()?.KeyPad ?? null;
+    const selectedKeyPadPool = KeyPadPool3;
+    const getKeyPad = (keyId: number) => selectedKeyPadPool.filter(k => k.KeyId == keyId).shift()?.KeyPad ?? null;
+
+    useEffect(() => {
+        setTimeout(() => {
+            document.addEventListener("keydown", (event) => {
+                event.preventDefault();
+                if (event.isComposing || event.keyCode === 229) {
+                    return;
+                }
+                console.log(event);
+                const keyId = selectedKeyPadPool.filter(k => k.KeyPad == event.key).shift()?.KeyId ?? null;
+                keyId && keyPress(keyId);
+            });
+        }, 0);
+    }, [soundPlayer])
+
     return (
         <>
             <div className={styles["p-wrapper"]}>
                 <ul className={styles["piano"]}>
                     {defaultPianoKeys.map(key =>
-                        <li className={styles["key"]}>
+                        <li className={
+                            classnames([styles["key"],
+                            keyId == key.blackKeyId || keyId == key.whiteKeyId ? styles["active"] : ''
+                            ])
+                        }
+                            key={key?.blackKeyId || '' + key.whiteKeyId + ''}>
                             <div className={styles["white-key"]}
                                 onClick={() => keyPress(key.whiteKeyId)}
                             >
