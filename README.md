@@ -66,9 +66,8 @@ Then open the browser at [http://localhost:3000/piano](http://localhost:3000/pia
   + Online duet mode: Parallel playing between 2 players (1 left hand, 1 right-hand)
 
 ## Technical optimizations:
-  + Upload and fetch the audio files using Amazon S3
   + Apply HTTP cache and CDN to reduce buffers download latency
   + Refactor code for convention implementation
   + Apply TailwindCSS for fast CSS custom
   + Using mp3/m4a file instead of .wav file to reduce storage size
-  + Apply Google Analytics to analyze website performance
+  + ...

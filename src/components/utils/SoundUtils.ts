@@ -1,7 +1,7 @@
 //This utils I use AudioContext to preload all .wav sound file before using, which is helpful for smooth first user experience.
 //I have used closure technique concept aim to encapsulate the 'private' things that is only visible access in this module.
 //The only thing public for outside utils is `playNode` function.
-
+const AWS_S3_BUCKET = 'https://trandinhlamworldaudio.s3.ap-southeast-1.amazonaws.com';
 export const SoundUtils = () => {
     
     let buffers: any[] = []
@@ -13,7 +13,7 @@ export const SoundUtils = () => {
     }
 
     for (let i = 16; i < 65; i++) {
-        var soundPath = `./sounds/${i}.wav`;
+        var soundPath = `${AWS_S3_BUCKET}/sounds/${i}.wav`;
         loadBuffer(i, soundPath);
     }
 
@@ -38,7 +38,7 @@ export const SoundUtils = () => {
             );
         }
         request.onerror = function () {
-            alert('BufferLoader: XHR error');
+            console.log('BufferLoader: XHR error');
         }
         request.send();
     }
