@@ -69,4 +69,7 @@ Then open the browser at [http://localhost:3000/piano](http://localhost:3000/pia
   + Refactor code for convention implementation
   + Apply TailwindCSS for fast CSS custom
   + Using mp3/m4a file instead of .wav file to reduce storage size
-  + Apply Google Analytics to analyze website performance
+  
+  - [x] Apply Google Analytics to analyze website performance
+  
+  + Test the feature of the app with Cypress/Playwright
