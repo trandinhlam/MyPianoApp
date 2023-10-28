@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { KeyPadPool3 } from '../const';
-import { SoundUtils } from '../utils/SoundUtils';
+import { KeyPadPool3 } from '../../const';
+import { SoundUtils } from '../../utils/SoundUtils';
 import styles from './Keyboard.module.scss';
 import classnames from 'classnames';
 //init pianokeys
