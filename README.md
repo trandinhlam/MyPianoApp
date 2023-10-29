@@ -73,3 +73,4 @@ Then open the browser at [http://localhost:3000/piano](http://localhost:3000/pia
   - [x] Apply Google Analytics to analyze website performance
   
   + Test the feature of the app with Cypress/Playwright
+  + Push notification with Service Worker

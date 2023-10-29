@@ -34,6 +34,7 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "autoprefixer": "^10.4.13",
+    "cypress": "^13.3.3",
     "env-cmd": "^10.1.0",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",

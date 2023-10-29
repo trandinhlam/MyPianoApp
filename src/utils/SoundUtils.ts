@@ -25,7 +25,6 @@ export const SoundUtils = () => {
             context.decodeAudioData(
                 request.response,
                 function (buffer) {
-                    console.log(buffer)
                     if (!buffer) {
                         alert('error decoding file data: ' + path);
                         return;
@@ -53,9 +52,6 @@ export const SoundUtils = () => {
             source.buffer = buffers[keyId];
             source.connect(context.destination);
             source.start(0);
-        }
-        else {
-            console.log("Audio not loaded for key=" + keyId);
         }
     }
 
