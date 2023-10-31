@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from './piano.module.scss';
 import ReactGA4 from 'react-ga4';
 import { useEffect } from 'react';
+import Head from 'next/head';
 
 export default function Piano() {
 
@@ -14,6 +15,9 @@ export default function Piano() {
 
     return (
         <>
+        <Head>
+        <title>My Piano Keyboard</title>
+      </Head>
             <div className={styles["piano"]}>
                 <strong>Hello!!</strong>
                 <br />

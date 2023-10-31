@@ -7,7 +7,8 @@ test('test', async ({ page }) => {
   await page.getByTestId('key-47').click()
   await page.getByTestId('key-56').click()
   await page.getByTestId('key-63').click()
+
   await page.getByText('Thank you and enjoy playing music on web browser!').click()
 
-  expect(1)
+  await expect(page).toHaveTitle(/My Piano Keyboard/);
 });
