@@ -7,7 +7,7 @@ now I'm rewriting it by using NextJS - a modern React framework.
 
 In the future, I will develop some cool features to learn new powerful technologies and satisfy my passion for music.
 
-This is the hosted website: http://trandinhlamworld.click/piano.
+This is the hosted website: [http://trandinhlamworld.click/piano.](https://trandinhlam.vercel.app/piano)
 
 Let feel free to contribute with me or send me your feedback, your awesome ideas or just give it a star :).
 
